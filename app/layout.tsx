@@ -14,6 +14,8 @@ import {
 import LogRocket from "logrocket";
 import Scripts from "next/script";
 import ReactLenis from "lenis/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Anurag Sawant - Full Stack Developer",
@@ -39,6 +41,8 @@ export default function RootLayout({
       <link rel="icon" type="image/png" href="/logoicon.png" />
       <body>
         <ReactLenis root>{children}</ReactLenis>
+        <SpeedInsights />
+        <Analytics />
       </body>
       <Scripts />
     </html>
