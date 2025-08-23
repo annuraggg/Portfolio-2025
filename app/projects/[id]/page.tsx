@@ -12,8 +12,13 @@ import ProjectHighlights from "./ProjectHighlights";
 import ProjectScreenshots from "./ProjectScreenshots";
 import ProjectFooter from "./ProjectFooter";
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects.find((p) => p.id === Number(params.id));
+interface ProjectPageProps {
+  params: Promise<{ id: string }>;
+}
+
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { id } = await params;
+  const project = projects.find((p) => p.id === Number(id));
 
   if (!project) return notFound();
 

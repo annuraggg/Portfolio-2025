@@ -5,7 +5,7 @@ import { credentials } from "@/data/credentials";
 import { SkillItem } from "./SkillItem";
 import { CredentialItem } from "./CredentialItem";
 
-export const Skills = () => {
+const Skills = () => {
   return (
     <div className="md:w-[70%] w-[85vw] animate__animated animate__fadeIn">
       <h1 className="font-poly text-3xl md:text-7xl text-center drop-shadow-glow">
