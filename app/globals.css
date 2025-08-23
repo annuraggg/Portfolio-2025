@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  --font-polyneutral: "PolyNeutral", sans-serif;
+  --font-polyslim: "PolySlim", sans-serif;
+  --font-poly: "PolyMedian", sans-serif;
+  --font-neueregu: "NeueRegular", sans-serif;
+  --font-neue: "neueMedium", sans-serif;
+  --font-neuelight: "NeueLight", sans-serif;
+  --font-neuemedium: "NeueMedium", sans-serif;
+  --font-neueitalic: "NeueItalic", sans-serif;
+  --font-gloock: "Gloock", serif;
+
+  --drop-shadow-glow: 0 0 10px rgba(255, 255, 255, 0.35);
+  --drop-shadow-dark-glow: 0 0 10px rgba(0, 0, 0, 0.5);
+  --drop-shadow-glow-light: 0 0px 1px rgba(255, 255, 255, 0.25),
+    0 0px 10px rgba(255, 255, 255, 0.2);
+  --drop-shadow-glow-extralight: 0 0px 1px rgba(255, 255, 255, 0.35),
+    0 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background-color: #101010;
+  color: #d8d9d8;
+  font-family: "neueMedium";
+}
+
+.loader {
+  border: 4px solid #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.loader {
+  border: 4px solid #ffffff;
+  border-left-color: transparent;
+  width: 36px;
+  height: 36px;
+}
+
+.loader {
+  border: 4px solid #ffffff;
+  border-left-color: transparent;
+  width: 20px;
+  height: 20px;
+  animation: spin89345 1s linear infinite;
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaderMain {
+  width: 45px;
+  height: 40px;
+  background: linear-gradient(
+      #0000 calc(1 * 100% / 6),
+      #fff 0 calc(3 * 100% / 6),
+      #0000 0
+    ),
+    linear-gradient(
+      #0000 calc(2 * 100% / 6),
+      #fff 0 calc(4 * 100% / 6),
+      #0000 0
+    ),
+    linear-gradient(
+      #0000 calc(3 * 100% / 6),
+      #fff 0 calc(5 * 100% / 6),
+      #0000 0
+    );
+  background-size: 10px 400%;
+  background-repeat: no-repeat;
+  animation: matrix 1s infinite linear;
+}
+
+@keyframes matrix {
+  0% {
+    background-position: 0% 100%, 50% 100%, 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%, 50% 0%, 100% 0%;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222322;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  width: 12px; /* Change the width of the handle on hover */
+}
