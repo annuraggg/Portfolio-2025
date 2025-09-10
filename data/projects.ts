@@ -235,24 +235,24 @@ const projects: Project[] = [
 
   {
     id: 4,
-    title: "Algovis",
+    title: "Flowlab",
     date: "2024",
-    cover: "/projects/algovis/cover.png",
-    role: "Frontend Developer",
+    cover: "/projects/flowlab/cover.png",
+    role: "Full Stack Developer",
     timeline: "January 2024 - March 2024",
     summary:
       "A web application that allows users to visualize DSA sorting algorithms. It also provides a detailed explanation of each algorithm",
-    description: `Algovis is a web application that allows users to visualize and learn about various sorting algorithms. It provides a visual representation of how each algorithm works, making it easier for users to understand and compare them. The application also includes detailed explanations of each algorithm, helping users learn the underlying concepts and principles. Algovis is designed to be interactive and engaging, making it an ideal tool for students and educators.`,
+    description: `Flowlab is a web application that allows users to visualize and learn about various sorting algorithms. It provides a visual representation of how each algorithm works, making it easier for users to understand and compare them. The application also includes detailed explanations of each algorithm, helping users learn the underlying concepts and principles. Flowlab is designed to be interactive and engaging, making it an ideal tool for students and educators.`,
     problem: `Sorting algorithms are an essential part of computer science and programming, but they can be difficult to understand and visualize. Students often struggle to grasp the concepts behind these algorithms, leading to confusion and frustration.`,
-    solution: `Algovis provides a visual representation of sorting algorithms, making it easier for users to understand how they work. By combining interactive animations with detailed explanations, the application helps students learn and compare different algorithms.`,
+    solution: `Flowlab provides a visual representation of sorting algorithms, making it easier for users to understand how they work. By combining interactive animations with detailed explanations, the application helps students learn and compare different algorithms.`,
     highlights: [
       "Visualizations: Interactive animations that show how each sorting algorithm works.",
       "Explanations: Detailed descriptions of each algorithm, including its time complexity and key concepts.",
     ],
     technologies: ["React", "ShadCN UI", "TypeScript"],
     links: {
-      github: ["https://www.github.com/annuraggg/algovis"],
-      demo: "https://algovis.anuragsawant.in",
+      github: ["https://www.github.com/annuraggg/flowlab"],
+      demo: "https://flowlab.anuragsawant.in",
     },
   },
 
