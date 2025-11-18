@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio-2025
 
-## Getting Started
+A personal portfolio website built with TypeScript. This repository powers https://www.anuragsawant.in and contains the source for the 2025 portfolio site, showcasing projects, experience, and contact information.
 
-First, run the development server:
+---
+
+## Table of contents
+
+- [About](#about)
+- [Live site](#live-site)
+- [Key features](#key-features)
+- [Built with](#built-with)
+- [Getting started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Run (development)](#run-development)
+  - [Build](#build)
+- [Environment](#environment)
+- [Project structure](#project-structure)
+- [Deploying](#deploying)
+- [Contact](#contact)
+
+---
+
+## About
+
+This repository contains the code for a modern, responsive portfolio implemented in TypeScript. It is designed to be lightweight, accessible, and easily deployable to static hosting or a Node/SSG-based platform.
+
+---
+
+## Live site
+
+https://2025.anuragsawant.in
+
+---
+
+## Key features
+
+- Static/SSG-optimized pages for fast load times
+- TypeScript for safer code and better DX
+- Responsive layout suitable for desktop and mobile
+- Sections for projects, experience, skills, and contact details
+- SEO-friendly meta and structured content (if implemented in templates)
+
+---
+
+## Built with
+
+- TypeScript
+- Node.js (tooling / build)
+- Any bundler / framework listed in package.json (see package.json for exact dependencies)
+
+---
+
+## Getting started
+
+### Prerequisites
+
+- Node.js (recommended v16+)
+- npm or yarn
+
+### Install
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/annuraggg/Portfolio-2025.git
+cd Portfolio-2025
+npm install
+# or
+# yarn
+```
+
+### Run (development)
+
+Start the dev server (if available in package.json):
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser at the address shown by the dev server (commonly http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Produce a production-ready build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deploying
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This portfolio can be deployed to any static host or platform that supports the chosen build output, for example:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Vercel (recommended for many modern frameworks)
+- Netlify
+- GitHub Pages (if configured for static export)
+- Any static hosting or CDN
 
-## Deploy on Vercel
+Deploy by running the build script and pointing the host to the output folder (commonly `dist`, `build`, or `out`).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+```
