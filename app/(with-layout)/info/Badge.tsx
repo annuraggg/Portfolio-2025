@@ -12,6 +12,7 @@ interface BadgeProps {
 const Badge = ({ id, fallen, fadeIn, onClick }: BadgeProps) => {
   return (
     <Image
+      key={`${id}-${fallen}`} // Add this key
       src="/badge.png"
       width={300}
       height={300}

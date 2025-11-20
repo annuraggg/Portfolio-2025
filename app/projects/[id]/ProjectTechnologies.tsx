@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
-  initial: { opacity: 1, y: 100 },
+  initial: { opacity: 1, y: 40 },
   animate: (index: number) => ({
     opacity: 1,
     y: 0,
@@ -23,7 +23,7 @@ export default function ProjectTechnologies({
       </h1>
       <div className="flex flex-wrap gap-2 w-[85vw] md:w-[70vw] items-center justify-center">
         {technologies.map((skill, index) => (
-          <motion.li
+          <motion.div
             key={index}
             className="md:text-base text-xs borderBlack rounded-xl px-5 py-3 bg-white/10 cursor-pointer transition-all duration-300"
             variants={fadeInAnimationVariants}
@@ -33,7 +33,7 @@ export default function ProjectTechnologies({
             custom={index}
           >
             {skill}
-          </motion.li>
+          </motion.div>
         ))}
       </div>
     </div>
